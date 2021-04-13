@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jean Carllo</title>
+
+    <!-- Online Fonts -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quando&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <!-- Custom styles -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+
+</head>
+
+<style>
+    .scrollspy-nav .scrollspy-indicator {
+        position: absolute;
+        height: 3px;
+        width: 0;
+        background: red;
+        bottom: 0;
+        left: 0;
+        transition: width 0.3s, left 0.1s;
+    }
+</style>
+
+<body>
+
+    <nav id="nav-md" class="scrollspy-nav d-none d-md-flex nav fixed-top nav-masthead justify-content-center py-2 navbar-fixed-top">
+        <a class="nav-link scrollspy-link" data-target="home">Início</a>
+        <a class="nav-link scrollspy-link" data-target="discografia">Discografia</a>
+        <a class="nav-link scrollspy-link" data-target="redes-sociais">Redes Sociais</a>
+        <a class="nav-link scrollspy-link" data-target="minha-historia">Minha História</a>
+        <a class="nav-link scrollspy-link" data-target="agenda">Agenda</a>
+        <a class="nav-link scrollspy-link" data-target="contato">Contato</a>
+        <span class="scrollspy-indicator"></span>
+    </nav>
+
+    <nav id="nav-s" class="scrollspy-nav nav d-block d-md-none navbar navbar-expand-lg navbar-dark fixed-top navbar-fixed-top color-bg navbar-font">
+        <div class="container container-fluid">
+            <a class="navbar-brand" href="#"><span id="nav-span-title" class="nav-span-title d-none-anim">
+                <img src="images/logo/jeancarllo_logo.svg" class="logo-img-smallrow">
+            </span></a>
+            <button id="btn-scroll" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="text-align: center">
+                <ul id="s-list" class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active scrollspy-link" aria-current="page" data-target="home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active scrollspy-link" aria-current="page" data-target="discografia">Discografia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active scrollspy-link" aria-current="page" data-target="redes-sociais">Redes Sociais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active scrollspy-link" aria-current="page" data-target="minha-historia">Minha História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active scrollspy-link" aria-current="page" data-target="agenda">Agenda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active scrollspy-link" aria-current="page" data-target="contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- Início -->
+        <section class="scrollspy-section" id="home">
+            <div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-light d-flex align-content-center flex-wrap home-display">
+                <div class="col-md-6 p-lg-6 mx-auto my-5 home-display-container">
+                    <!-- <h1 class="display-4 fw-normal">AMET CONSEC</h1> -->
+                    <div class="d-flex justify-content-center flex-column flex-sm-row py-2">
+                        <div class="col-12 px-2">
+                            <img class="float-end logo-img-main" src="images/logo/jeancarllo_logo_pt1.svg">
+                        </div>
+                        <div class="col-12 px-2">
+                            <img class="float-start align-self-baseline logo-img-main" src="images/logo/jeancarllo_logo_pt2.svg">
+                        </div>
+                    </div>
+                    <p class="lead fw-normal home-display-sub">Jesus - Novo Clipe</p>
+                    <a href="https://www.youtube.com/watch?v=_7_-HsHnaWg" target="_blank" class="btn btn-light btn-lg">
+                        <img src="images/icons/play-fill.svg" width="18" height="18"> Assistir
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discografia -->
+        <section class="scrollspy-section" id="discografia">
+            <div id="discografia" class="bg-light">
+                <div class="container discografia-container py-4">
+                    <h1>Ouça nas plataformas digitais!</h1>
+                    <div class="row d-flex justify-content-center flex-row py-3">
+                        <div class="discografia-link col-4 col-md-2">
+                            <a href="https://open.spotify.com/artist/6OgYzuYVdw1O9GHBMp2gIA" target="_blank">
+                                <img src="images/icons/streaming/spotify.svg" alt="circulo" width="60" height="60">
+                                <p>Spotify</p>
+                            </a>
+                        </div>
+                        <div class="discografia-link col-4 col-md-2">
+                            <a href="https://www.deezer.com/br/artist/50547262" target="_blank">
+                                <img src="images/icons/streaming/deezer.svg" alt="circulo" width="60" height="60">
+                                <p>Deezer</p>
+                            </a>
+                        </div>
+                        <div class="discografia-link col-4 col-md-2">
+                            <a href="https://music.apple.com/br/artist/jean-carllo/id1433960220" target="_blank">
+                                <img src="images/icons/streaming/apple_music.svg" alt="circulo" width="60" height="60">
+                                <p>Apple Music</p>
+                            </a>
+                        </div>
+                        <div class="discografia-link col-4 col-md-2">
+                            <a href="https://music.amazon.com.br/artists/B07GSHCGCB/jean-carllo" target="_blank">
+                                <img src="images/icons/streaming/amazon_music.svg" alt="circulo" width="60" height="60">
+                                <p>Amazon Music</p>
+                            </a>
+                        </div>
+                        <div class="discografia-link col-4 col-md-2">
+                            <a href="https://www.youtube.com/channel/UC-L7StwOLhDyhwk60CMVeKQ" target="_blank">
+                                <img src="images/icons/streaming/youtube.svg" alt="circulo" width="60" height="60">
+                                <p>Youtube</p>
+                            </a>
+                        </div>
+                        <div class="discografia-link col-4 col-md-2">
+                            <a href="https://music.youtube.com/channel/UCrwrR52Gf76VgXVvadQ3-pg" target="_blank">
+                                <img src="images/icons/streaming/youtube_music.svg" alt="circulo" width="60" height="60">
+                                <p>Youtube Music</p>
+                            </a>
+                        </div>
+                    </div>
+                    <h1>Clipes</h1>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 py-2">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_7_-HsHnaWg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 py-2">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_7_-HsHnaWg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Redes Sociais -->
+        <section class="scrollspy-section" id="redes-sociais">
+            <div id="redes-sociais" class="bg-dark">
+                <div class="container redes-container py-4">
+                    <h1>Acompanhe nas redes sociais:</h1>
+                    <div class="row d-flex justify-content-center py-3">
+                        <div class="redes-link col-6 col-sm-3">
+                            <img src="images/icons/social/facebook.svg" alt="circulo" width="60" height="60">
+                            <p>Facebook nomedapaginaaqui</p>
+                        </div>
+                        <div class="redes-link col-6 col-sm-3">
+                            <img src="images/icons/social/instagram.svg" alt="circulo" width="60" height="60">
+                            <p>Instagram @jeancarllooficial</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Minha História -->
+        <section class="scrollspy-section" id="minha-historia">
+            <div id="minha-historia" class="bg-light">
+                <div class="container historia-container py-4">
+                    <h1>A minha história</h1>
+                    <div class="py-3 featurette-style">
+
+                        <div class="row featurette" id="link2">
+                            <div class="col-md-7">
+                                <p class="lead lh-lg text-center text-md-start">
+                                    Nascido no Espírito Santo, na cidade de Colatina, aos seis anos de idade, então começa a sua tragetória musical, cantando em igrejas e eventos. <br><br> Desde que Jean foi chamado ao ministério musical, su objetivo
+                                    sempre foi levar a palavra de Deus através da música.
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <img src="images/jeancarllo_featurette1.jpg" class="    bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto ">
+                            </div>
+                        </div>
+
+                        <div class="row featurette pt-5" id="link3 ">
+                            <div class="col-md-7 order-md-2 ">
+                                <p class="lead lh-lg text-center text-md-end ">
+                                    Em 2010, então, o cantor Jean Carllo grava seu primeiro CD (Que amor é esse), em 2018 lança o Single e o cilpe Nosso Criador, com a produção geral de Rodrigo Wegner, e em 2020, lançou seu novo EP (Nosso Criador) com participações de: Rawfy Welton, Douglas
+                                    e Marcelle e produção geral de Rodrigo Wegner.
+                                </p>
+                            </div>
+                            <div class="col-md-5 order-md-1 ">
+                                <img src="images/jeancarllo_featurette2.jpg " class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto ">
+                            </div>
+                        </div>
+
+                        <div class="row featurette pt-5" id="link4 ">
+                            <div class="col-md-7 ">
+                                <p class="lead lh-lg text-center text-md-start">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis nisi dolor. Proin mollis sollicitudin turpis, sed condimentum velit placerat et. Pellentesque tincidunt nisl id elit feugiat, in placerat mauris suscipit. Phasellus vitae ante nec lacus
+                                    ultrices fringilla.
+                                </p>
+                            </div>
+                            <div class="col-md-5 ">
+                                <img src="images/jeancarllo_featurette3.jpg " class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto ">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agenda -->
+        <section class="scrollspy-section " id="agenda">
+            <div id="agenda " class="bg-dark ">
+                <div class="container agenda-container pt-4 ">
+                    <h1>Agenda:</h1>
+                    <div class="py-3 table-responsive">
+                        <table class="table table-dark table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col ">Data</th>
+                                    <th scope="col ">Local</th>
+                                    <th scope="col ">Horário</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row ">05/05/2021</th>
+                                    <td>Lorem ipsum dolor sit amet. Sed justo nibh, sed odio eget</td>
+                                    <td>19:00 ~ 20:00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row ">05/05/2021</th>
+                                    <td>Lorem ipsum dolor sit amet. Sed justo nibh, sed odio eget</td>
+                                    <td>19:00 ~ 20:00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row ">05/05/2021</th>
+                                    <td>Lorem ipsum dolor sit amet. Sed justo nibh, sed odio eget</td>
+                                    <td>19:00 ~ 20:00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row ">05/05/2021</th>
+                                    <td>Lorem ipsum dolor sit amet. Sed justo nibh, sed odio eget</td>
+                                    <td>19:00 ~ 20:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="scrollspy-section " id="contato">
+            <div id="contato " class="bg-light ">
+                <div class="container contato-container py-4 ">
+                    <h1>Contato</h1>
+                    <div class="py-3 d-flex justify-content-center ">
+                        <div class="d-none d-md-block col-12 col-md-6 ">
+                            <img src="images/jeancarllo_contato.jpg ">
+                        </div>
+                        <div class="col-12 col-md-6 text-center text-md-start ">
+                            <div class="ms-0 ms-md-4 ">
+                                <p class="contato-txt-titulo ">EMAIL</p>
+                                <p class="contato-txt ">contato@apenasteste.com.br</p>
+                                <br>
+                                <p class="contato-txt-titulo ">TELEFONE</p>
+                                <p class="contato-txt ">(27) 99999-9999</p>
+                                <br>
+                                <p class="contato-txt-titulo ">Telegram</p>
+                                <p class="contato-txt ">@apenasteste </p>
+                                <br>
+                                <p class="contato-txt-titulo ">WhatsApp</p>
+                                <p class="contato-txt ">(27) 99999-9999</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="bg-dark ">
+            <footer class="py-4 d-flex justify-content-center ">
+                <div class="container ">
+                    <div class="col text-center ">
+                        <a class="footer-logo " href="# ">
+                            <img src="images/logo/jeancarllo_logo.svg" class="logo-img-smallrow">
+                        </a>
+                    </div>
+                    <div class="col text-center footer-content mt-3 ">
+                        <p>Novo clipe 'Jesus' já disponível!</p>
+                    </div>
+                    <div class="col text-center py-0 footer-content-link ">
+                        <a href="#home">De volta ao topo</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </main>
+
+    <script src="js/scrollspy.js "></script>
+    <script src="js/navbar-scroll.js "></script>
+    <script src="js/bootstrap.bundle.min.js "></script>
+
+</body>
+
+
+</html>
