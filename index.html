@@ -94,7 +94,7 @@
                         </div>
                     </div>
                     <p class="lead fw-normal home-display-sub">Jesus - Novo Clipe</p>
-                    <a href="https://www.youtube.com/watch?v=_7_-HsHnaWg" target="_blank" class="btn btn-light btn-lg">
+                    <a href="https://youtu.be/djPh89tUj6s" target="_blank" class="btn btn-light btn-lg">
                         <img src="images/icons/play-fill.svg" width="18" height="18"> Assistir
                     </a>
                 </div>
@@ -148,7 +148,7 @@
                     <div class="row">
                         <div class="col-12 col-lg-6 py-2">
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_7_-HsHnaWg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/djPh89tUj6s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="col-12 col-lg-6 py-2">
@@ -166,14 +166,18 @@
             <div id="redes-sociais" class="bg-dark">
                 <div class="container redes-container py-4">
                     <h1>Acompanhe nas redes sociais:</h1>
-                    <div class="row d-flex justify-content-center py-3">
+                    <div class="row d-flex justify-content-center py-3 redes">
                         <div class="redes-link col-6 col-sm-3">
-                            <img src="images/icons/social/facebook.svg" alt="circulo" width="60" height="60">
-                            <p>Facebook nomedapaginaaqui</p>
+                            <a href="https://www.facebook.com/jeancarllooficial/" target="_blank">
+                                <img src="images/icons/social/facebook.svg" alt="circulo" width="60" height="60">
+                                <p class="pt-2 mb-0">Facebook<br>@jeancarllooficial</p>
+                            </a>
                         </div>
                         <div class="redes-link col-6 col-sm-3">
-                            <img src="images/icons/social/instagram.svg" alt="circulo" width="60" height="60">
-                            <p>Instagram @jeancarllooficial</p>
+                            <a href="https://www.instagram.com/jeancarllooficial/?hl=en" target="_blank">
+                                <img src="images/icons/social/instagram.svg" alt="circulo" width="60" height="60">
+                                <p class="pt-2 mb-0">Instagram<br>@jeancarllooficial</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -211,7 +215,7 @@
                             </div>
                         </div>
 
-                        <div class="row featurette pt-5" id="link4 ">
+                        <!-- <div class="row featurette pt-5" id="link4 ">
                             <div class="col-md-7 ">
                                 <p class="lead lh-lg text-center text-md-start">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis nisi dolor. Proin mollis sollicitudin turpis, sed condimentum velit placerat et. Pellentesque tincidunt nisl id elit feugiat, in placerat mauris suscipit. Phasellus vitae ante nec lacus
@@ -221,7 +225,7 @@
                             <div class="col-md-5 ">
                                 <img src="images/jeancarllo_featurette3.jpg " class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto ">
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -234,37 +238,48 @@
                 <div class="container agenda-container pt-4 ">
                     <h1>Agenda:</h1>
                     <div class="py-3 table-responsive">
-                        <table class="table table-dark table-striped table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col ">Data</th>
-                                    <th scope="col ">Local</th>
-                                    <th scope="col ">Horário</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row ">05/05/2021</th>
-                                    <td>Lorem ipsum dolor sit amet. Sed justo nibh, sed odio eget</td>
-                                    <td>19:00 ~ 20:00</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row ">05/05/2021</th>
-                                    <td>Lorem ipsum dolor sit amet. Sed justo nibh, sed odio eget</td>
-                                    <td>19:00 ~ 20:00</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row ">05/05/2021</th>
-                                    <td>Lorem ipsum dolor sit amet. Sed justo nibh, sed odio eget</td>
-                                    <td>19:00 ~ 20:00</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row ">05/05/2021</th>
-                                    <td>Lorem ipsum dolor sit amet. Sed justo nibh, sed odio eget</td>
-                                    <td>19:00 ~ 20:00</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <table id="agenda-tabela" class="table table-dark table-striped table-bordered mb-0"> </table>
+                        <div id="placeholder-container" class="placeholder-container">
+                            <div class="box">
+                                <table id="agenda-placeholder" class="table table-dark table-striped table-bordered table-blur">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col ">Data</th>
+                                            <th scope="col ">Local</th>
+                                            <th scope="col ">Horário</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row ">05/05/2021</th>
+                                            <td>Lorem ipsum dolor sit amet. Sed justo nibh, sed odio eget</td>
+                                            <td>19:00 ~ 20:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row ">05/05/2021</th>
+                                            <td>Lorem ipsum dolor sit amet. Sed justo nibh, sed odio eget</td>
+                                            <td>19:00 ~ 20:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row ">05/05/2021</th>
+                                            <td>Lorem ipsum dolor sit amet. Sed justo nibh, sed odio eget</td>
+                                            <td>19:00 ~ 20:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row ">05/05/2021</th>
+                                            <td>Lorem ipsum dolor sit amet. Sed justo nibh, sed odio eget</td>
+                                            <td>19:00 ~ 20:00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="box overlay d-flex align-items-center justify-content-center">
+                                <h5 id="agenda-no-items" class="rotated-border mb-0 agenda-load-error">Ainda não há eventos cadastrados.</h5>
+                                <div id="agenda-loading" class="spinner-border text-light" role="status">
+                                    <span class="sr-only"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -282,16 +297,16 @@
                         <div class="col-12 col-md-6 text-center text-md-start ">
                             <div class="ms-0 ms-md-4 ">
                                 <p class="contato-txt-titulo ">EMAIL</p>
-                                <p class="contato-txt ">contato@apenasteste.com.br</p>
+                                <p class="contato-txt ">jeancarlloofficial@gmail.com</p>
                                 <br>
                                 <p class="contato-txt-titulo ">TELEFONE</p>
-                                <p class="contato-txt ">(27) 99999-9999</p>
+                                <p class="contato-txt ">(33) 99933-6849</p>
                                 <br>
-                                <p class="contato-txt-titulo ">Telegram</p>
+                                <!-- <p class="contato-txt-titulo ">Telegram</p>
                                 <p class="contato-txt ">@apenasteste </p>
-                                <br>
+                                <br> -->
                                 <p class="contato-txt-titulo ">WhatsApp</p>
-                                <p class="contato-txt ">(27) 99999-9999</p>
+                                <p class="contato-txt ">(33) 99933-6849</p>
                             </div>
                         </div>
                     </div>
@@ -322,6 +337,7 @@
 
     <script src="js/scrollspy.js "></script>
     <script src="js/navbar-scroll.js "></script>
+    <script src="js/agenda.js"></script>
     <script src="js/bootstrap.bundle.min.js "></script>
 
 </body>

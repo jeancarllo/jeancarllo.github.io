@@ -2,8 +2,8 @@
 #             GENERAL
 ==================================*/
 
-body {
-    font: Roboto !important;
+* {
+    font-family: 'Roboto', sans-serif !important;
 }
 
 
@@ -64,10 +64,6 @@ nav.scrolled {
     visibility: visible;
     opacity: 1;
     transition: visibility 200ms, opacity 200ms linear;
-}
-
-.navbar-font {
-    font: Roboto !important;
 }
 
 
@@ -133,7 +129,6 @@ nav.scrolled {
 ==================================*/
 
 .discografia-container {
-    font-family: Roboto;
     text-align: center;
 }
 
@@ -143,7 +138,6 @@ nav.scrolled {
 
 .discografia-link p {
     font-size: 20px;
-    font-family: Roboto;
 }
 
 .discografia-link a {
@@ -188,7 +182,6 @@ nav.scrolled {
 ==================================*/
 
 .redes-container {
-    font-family: Roboto;
     text-align: center;
 }
 
@@ -203,7 +196,11 @@ nav.scrolled {
 
 .redes-link p {
     font-size: 20px;
-    font-family: Roboto;
+    color: white;
+}
+
+.redes a {
+    text-decoration: none;
     color: white;
 }
 
@@ -213,7 +210,6 @@ nav.scrolled {
 ==================================*/
 
 .historia-container {
-    font-family: Roboto;
     text-align: center;
 }
 
@@ -227,7 +223,6 @@ nav.scrolled {
 ==================================*/
 
 .agenda-container {
-    font-family: Roboto;
     text-align: center;
 }
 
@@ -236,13 +231,45 @@ nav.scrolled {
     color: white;
 }
 
+.agenda-tabela {
+    color: white;
+}
+
+.table-blur {
+    filter: blur(3px);
+}
+
+.placeholder-container {
+    width: auto;
+    height: 210px;
+    position: relative;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.overlay {
+    z-index: 9;
+    opacity: 1;
+}
+
+.agenda-load-error {
+    color: white;
+    display: none;
+}
+
 
 /*==================================
 #             CONTATO
 ==================================*/
 
 .contato-container {
-    font-family: Roboto;
     text-align: center;
 }
 
@@ -252,12 +279,10 @@ nav.scrolled {
 
 .contato-txt-titulo {
     color: rgb(43, 43, 43);
-    font-family: Roboto;
 }
 
 .contato-txt {
     color: dimgrey;
-    font-family: Roboto;
 }
 
 
@@ -278,6 +303,5 @@ nav.scrolled {
 }
 
 .footer-content {
-    font-family: Roboto;
     color: white;
 }
